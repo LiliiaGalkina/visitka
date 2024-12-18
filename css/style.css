@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: rgb(52, 52, 145);
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.subtitle {
+  font-family: "Zen Antique", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(60, 60, 182);
+}
+
+/*header*/
+.header {
+  padding: 20px 0;
+  background-color: rgb(60, 60, 182);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__menu {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  display: block;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.header__item:hover {
+  text-decoration: underline;
+}
+
+/*about*/
+.about {
+  padding: 60px 0 50px;
+}
+.about__items {
+  display: flex;
+}
+.about__foto {
+  margin-right: 40px;
+  flex-basis: 70%;
+}
+.about__foto img {
+  width: 100%;
+}
+.about__info {
+  padding-top: 20px;
+}
+.about__title {
+  margin-bottom: 50px;
+  font-family: "Zen Antique", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(60, 60, 182);
+}
+.about__subtitle {
+  margin-bottom: 20px;
+}
+.about__text {
+  font-size: 1.25rem;
+  line-height: 150%;
+  font-style: italic;
+}
+
+/*skils-contacts*/
+.skils-contacts {
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills__subtitle {
+  margin-bottom: 30px;
+}
+.skills__list li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.skills__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__subtitle {
+  margin-bottom: 30px;
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__item-img {
+  margin-right: 20px;
+}
+.contacts__item-text {
+  font-size: 1.25rem;
+}
+
+/*footer*/
+.footer {
+  padding: 20px 0;
+  background-color: rgb(60, 60, 182);
+  text-align: center;
+  color: #fff;
+}
